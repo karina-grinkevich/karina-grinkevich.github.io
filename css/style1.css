@@ -95,15 +95,15 @@
 .slider .slick-dots button{
 	font-size: 0;
 	width: 10px;
-	height: 10px;
-	background-color: #323131;
+	height: 12px;
+	background-color: dimgrey;
 	border-radius: 50%;
     
 }
 
 .slider .slick-dots li.slick-active button{
 	background-color: transparent;
-	border: 1px solid #fff;
+	border: 1px solid #323131;
 }
 
 .slider__item {
