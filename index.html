@@ -1,66 +1,77 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1" или initial-scale=1.0>
 	<title>ArtGallery</title>
-	<!-- Style css -->
-	<link rel="stylesheet" href="css/style_kalo.css" >
-    <link rel="stylesheet" href="css/fullpage.css" >
-    
-    <!-- js -->
-    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
-      <script type="text/javascript" src="js/fullpage.js"></script>
-      <script type="text/javascript" src="js/scrolloverflow.js"></script>
-    
-    <script>
-        jQuery(document).ready(function($){
-         $('#fullpage').fullpage({
-
- sectionSelector: '.vertical-scrolling',
-  controlArrows: false,
-verticalCentered: false;
-  
-             
-         });   
-            
-        })
-    </script>
-    
-
-
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	
-</head>
- <body>
-     <div id="fullPage">
-         <div class="section" id="section0">
-             <h2>страница 1</h2>
-         </div>
-     </div>
-    <div id="fullPage">
-         <div class="section" id="section1">
-             <h2>страница 2</h2>
-         </div>
-     </div>
-    <div id="fullPage">
-         <div class="section" id="section2">
-             <h2>страница 3</h2>
-         </div>
-     </div>
-    <div id="fullPage">
-         <div class="section" id="section3">
-             <h2>страница 4</h2>
-         </div>
-     </div>
-    <div id="fullPage">
-         <div class="section" id="section4">
-             <h2>страница 5</h2>
-         </div>
-     </div>
+    <!-- Style css -->
+	<link rel="stylesheet" href="css/css1.css" >
+    
+<meta name="viewport" content="width=device-width">
+
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     
 
+</head>
+    
+<link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
+    
+<body>
+    	<article id="header-b">
+				<div class="bottom">
+						<a href="#">Викторина</a>
+						<a href="#">Главная </a>
+						<a href="#">Картины</a>
+				</div>
+			</article>
+    
+    <script type="text/javascript">
+		jQuery("document").ready(function($){
+			var nav = $('#header-b');
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 130) {
+					nav.addClass("f-nav");
+				} else {
+					nav.removeClass("f-nav");
+				}
+			});
+		});
+	</script>
+<div id="fullpage">
+  <section class="vertical-scrolling">
+      
+    <h2>страница 1</h2>
+      
+  </section>
+    
+    
+  <section class="vertical-scrolling">
+   <h2>страница 2</h2>
+  </section>
+    
+    <section class="vertical-scrolling">
+     <h2>страница 3</h2>
+    </section>
+    
+  <section class="vertical-scrolling">
+      <h2>страница 4</h2>
+  </section>
+    
+  <section class="vertical-scrolling">
+    <h2>страница 5</h2> 
+  </section>
   
- </body>
+    <script src="js/fullpage.js"></script>
+    
+</div>   
+    
+    
+    </body>
 </html>
+    
