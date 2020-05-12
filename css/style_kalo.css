@@ -127,6 +127,12 @@ h2{
     margin-left: 65px;
   }
 }
+@media screen and (max-width: 768px) {
+  #back {
+    background: #e8e8e8 ;
+     
+  }
+}
 .pic1{
     display: block;
     max-width: 100%;
