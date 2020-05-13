@@ -15,6 +15,14 @@ $('.js-close-campaign1').click(function () {
     
 
 });
+    // закрыть по клику вне окна 
+$(document).mouseup(function (e) {
+var popup = $('.js-popup-campaign1');
+if (e.target != popup[0] && popup.has(e.target).length === 0) {
+$('.js-overlay-campaign1').fadeOut();
+$('.block').css('filter','none');
+}
+});
 
 
 
@@ -32,6 +40,14 @@ $('.js-close-campaign2').click(function () {
      $('.block').css('filter','none');
     
 
+});
+    // закрыть по клику вне окна 
+$(document).mouseup(function (e) {
+var popup = $('.js-popup-campaign2');
+if (e.target != popup[0] && popup.has(e.target).length === 0) {
+$('.js-overlay-campaign2').fadeOut();
+$('.block').css('filter','none');
+}
 });
 
 
@@ -52,6 +68,14 @@ $('.js-close-campaign3').click(function () {
     
 
 });
+    // закрыть по клику вне окна 
+$(document).mouseup(function (e) {
+var popup = $('.js-popup-campaign3');
+if (e.target != popup[0] && popup.has(e.target).length === 0) {
+$('.js-overlay-campaign3').fadeOut();
+$('.block').css('filter','none');
+}
+});
 
 
 
@@ -70,6 +94,14 @@ $('.js-close-campaign4').click(function () {
      $('.block').css('filter','none');
     
 
+});
+    // закрыть по клику вне окна 
+$(document).mouseup(function (e) {
+var popup = $('.js-popup-campaign4');
+if (e.target != popup[0] && popup.has(e.target).length === 0) {
+$('.js-overlay-campaign4').fadeOut();
+$('.block').css('filter','none');
+}
 });
 
 
@@ -90,6 +122,15 @@ $('.js-close-campaign5').click(function () {
     
 
 });
+    // закрыть по клику вне окна 
+$(document).mouseup(function (e) {
+var popup = $('.js-popup-campaign5');
+if (e.target != popup[0] && popup.has(e.target).length === 0) {
+$('.js-overlay-campaign5').fadeOut();
+$('.block').css('filter','none');
+}
+});
+
 
 
 
@@ -109,7 +150,14 @@ $('.js-close-campaign6').click(function () {
     
 
 });
-
+    // закрыть по клику вне окна 
+$(document).mouseup(function (e) {
+var popup = $('.js-popup-campaign6');
+if (e.target != popup[0] && popup.has(e.target).length === 0) {
+$('.js-overlay-campaign6').fadeOut();
+$('.block').css('filter','none');
+}
+});
 
 
 
